@@ -13,7 +13,7 @@ export const NavBar = () => {
       {/* Botón de menú hamburguesa (visible solo en pantallas pequeñas) */}
       <img
         id="burguerMenu"
-        className={`absolute right-4 top-4 w-10 h-4 cursor-pointer z-20 sm:hidden ${isMenuOpen ? 'hidden' : ''}`}
+        className={`absolute right-4 w-10 h-4 cursor-pointer z-20 sm:hidden ${isMenuOpen ? 'hidden' : ''}`}
         src={burguerMenu}
         alt="Open Menu"
         onClick={openMenu}
@@ -37,7 +37,7 @@ export const NavBar = () => {
         {/* Botón de cerrar menú (solo visible en pantallas pequeñas) */}
         <img
           id="closeMenu"
-          className={`absolute z-40 top-4 right-4 w-10 h-4 cursor-pointer sm:hidden ${isMenuOpen ? '' : 'hidden'}`}
+          className={`absolute z-40 top-16 right-4 w-10 h-4 cursor-pointer sm:hidden ${isMenuOpen ? '' : 'hidden'}`}
           src={closeMenu}
           alt="Close Menu"
           onClick={closeMenuHandler}
